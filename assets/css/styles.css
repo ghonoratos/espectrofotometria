@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body{
+    background-color: #fff;
+    color:#1b1b1b;
+    font: 16px/1.5 "Poppins",sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+main{
+    max-width: 991px;
+    margin: 4rem auto;
+    padding: 0 32px;
+}
+
+h1{
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+h2{
+    font-size: 17px;
+    color:#3e3e3e;
+}
+
+.student{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1rem 0 2rem;
+}
+
+.student .infos{
+    line-height: 18px;
+}
+
+.student .ra{
+    font-weight: bold;
+}
+
+.student .image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #498C8A;
+    margin-left: 16px;
+}
+
+.quest{
+    margin-bottom: 2rem;
+}
+
+.table-wrapper{
+    margin: 2rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+
+table thead th {
+    background: #1b1b1b;
+    color: #fff;
+    padding: 4px;
+    border: 1px solid #000;
+}
+
+table tbody td {
+    padding: 4px;
+    border: 1px solid #000;
+}
+
+.table-wrapper small{
+    display: none;
+}
+
+.unknown td{
+    background-color: #3e3e3e;
+    color: #fff;
+    border-color: #000;
+}
+
+.unknown.unknown--know td{
+    background-color: #498C8A;
+}
+
+.graph {
+    margin: 2rem 0;
+}
+
+.graph-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.graph-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.graph-content img{
+    border: 1px solid;
+}
+
+@media screen and (max-width: 991px) {
+
+    main{
+        max-width: 100%;
+    }
+
+    .graph-title{
+        text-align: left;
+    }
+
+    .graph-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .graph-content img{
+        width: 100%;
+    }
+
+    .graph-content .graph-infos{
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    h1{
+        font-size: 1.8rem;
+        word-break: break-word;
+    }
+
+    .student .image{
+        width: 50px;
+        height: 50px;
+    }
+
+    .table-wrapper{
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+
+    .table-wrapper small{
+        display: block;
+        padding-bottom: 12px;
+    }
+
+    .table-wrapper small svg{
+        font-size: 12px;
+        color: #484848;
+    }
+
+    table tbody td {
+        min-width: 200px;
+    }
+
+}

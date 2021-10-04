@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bioquímica - Espectrofotometria </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/aa4bc34383.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+
+        <main>
+
+            <div class="page-title">
+                <h1> Espectrofotometria: conceitos e aplicações </h1>
+                <h2>BCL0308-155A - Fúlvio Mendes - 2021.3 (Bioquímica Prática)</h2>
+            </div>
+            <div class="student">
+                <div class="infos">
+                    <p class="name">Gabriel Honorato</p>
+                    <p class="ra">11201811691</p>
+                </div>
+                <div class="image">
+                    <img src="./assets/images/profile.jpg" alt="Gabriel Honorato">
+                </div>
+            </div>
+            
+            <section class="question">
+                <div class="quest">
+                    <p> <strong>1.</strong>  Utilizando as informações disponíveis na tabela da página 9 você deverá construir uma curva padrão da albumina plotando a absorbância em 280 nm (eixo Y) em função da concentração em mol/L (eixo X). A partir deste gráfico, determine a absortividade (coeficiente angular) da amostra e determine a concentração da solução desconhecida, utilizando a Lei de Lambert-Beer (veja instruções na apostila). </p>
+                </div>
+                <div class="answer">
+                    <p> <strong>R.</strong> Primeiramente, os valores conhecidos de concentração de albumina em μmol/L foram convertidos para para mol/L:</p>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <th>Concentração albumina (μmol/L)</th>
+                                <th>Concentração albumina (mol/L)</th>
+                                <th>Absorbância em 280 nm</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>0,00002</td>
+                                    <td>0,0787</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>0,00004</td>
+                                    <td>0,1547</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>0,00006</td>
+                                    <td>0,2443</td>
+                                </tr>
+                                <tr>
+                                    <td>80</td>
+                                    <td>0,00008</td>
+                                    <td>0,3414</td>
+                                </tr>
+                                <tr>
+                                    <td>100</td>
+                                    <td>0,00010</td>
+                                    <td>0,3887</td>
+                                </tr>
+                                <tr>
+                                    <td>120</td>
+                                    <td>0,00012</td>
+                                    <td>0,4750</td>
+                                </tr>
+                                <tr>
+                                    <td>140</td>
+                                    <td>0,00014</td>
+                                    <td>0,5426</td>
+                                </tr>
+                                <tr>
+                                    <td>160</td>
+                                    <td>0,00016</td>
+                                    <td>0,6217</td>
+                                </tr>
+                                <tr>
+                                    <td>180</td>
+                                    <td>0,00018</td>
+                                    <td>0,7016</td>
+                                </tr>
+                                <tr>
+                                    <td>200</td>
+                                    <td>0,00020</td>
+                                    <td>0,7632</td>
+                                </tr>
+                                <tr class="unknown">
+                                    <td>Amostra desconhecida</td>
+                                    <td>Amostra desconhecida</td>
+                                    <td>0,4289</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <small>scroll horizontal <i class="fas fa-arrow-right"></i></small>
+                    </div>
+
+                    <p>Com a tabela pronta, Excel foi utilizado para plotar um gráfico de absorbância em 280 nm (eixo y) em função da concentração de albumina em mol/L (eixo x). <br> Também é possível observar o gráfico <a href=""> aqui </a>
+                    </p>
+
+                    <div class="graph">
+                        <p class="graph-title">Absorbância em 280 nm em função da concentração de albumina em mol/L</p>
+                        <div class="graph-content">
+                            <img src="./assets/images/graph.jpg" alt="Absorbância em 280 nm em função da concentração de albumina em mol/L">
+                            <div class="graph-infos">
+                                
+                                <p class="equation"> <var>y</var> = 3835,8<var>x</var> + 0,0084</p>
+                                <p class="r-square"> <var>R²</var> = 0,9983</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <p>Exibindo a linha de tendência linear, foi possível identificar o <var>ε</var> em 280nm (coeficiente angular), onde <var>ε</var> em 280nm = 3835,8. </p>
+
+                    <p>Com o <var>ε</var> identificado, e aplicando a equação de Lambert-Beer <var>A</var> = <var>ε</var>.<var>C</var>.<var>l</var>, com <var>l</var> = 1cm. A concentração de albumina encontrada para a amostra desconhecida é 0,00011 mol/L. Deixando nossa tabela completa: </p>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <th>Concentração albumina (μmol/L)</th>
+                                <th>Concentração albumina (mol/L)</th>
+                                <th>Absorbância em 280 nm</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>0,00002</td>
+                                    <td>0,0787</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>0,00004</td>
+                                    <td>0,1547</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>0,00006</td>
+                                    <td>0,2443</td>
+                                </tr>
+                                <tr>
+                                    <td>80</td>
+                                    <td>0,00008</td>
+                                    <td>0,3414</td>
+                                </tr>
+                                <tr>
+                                    <td>100</td>
+                                    <td>0,00010</td>
+                                    <td>0,3887</td>
+                                </tr>
+                                <tr class="unknown unknown--know">
+                                    <td>111</td>
+                                    <td>0,00011</td>
+                                    <td>0,4289</td>
+                                </tr>
+                                <tr>
+                                    <td>120</td>
+                                    <td>0,00012</td>
+                                    <td>0,4750</td>
+                                </tr>
+                                <tr>
+                                    <td>140</td>
+                                    <td>0,00014</td>
+                                    <td>0,5426</td>
+                                </tr>
+                                <tr>
+                                    <td>160</td>
+                                    <td>0,00016</td>
+                                    <td>0,6217</td>
+                                </tr>
+                                <tr>
+                                    <td>180</td>
+                                    <td>0,00018</td>
+                                    <td>0,7016</td>
+                                </tr>
+                                <tr>
+                                    <td>200</td>
+                                    <td>0,00020</td>
+                                    <td>0,7632</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+
+                        <small>scroll horizontal <i class="fas fa-arrow-right"></i></small>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        
+    </body>
+</html>
